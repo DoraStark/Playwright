@@ -2,7 +2,7 @@
 import { test, expect } from "@playwright/test";
 
 test("login and save storage state", async ({ page }) => {
-  await page.goto("https://qauto.forstudy.space/");
+  await page.goto("/");
 
   await page.getByRole("button", { name: /sign in/i }).click();
 
