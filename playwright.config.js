@@ -10,10 +10,10 @@ export default defineConfig({
   use: {
     baseURL: process.env.BASE_URL || "https://qauto.forstudy.space",
 
-    httpCredentials: {
-      username: process.env.AUTH_USER,
-      password: process.env.AUTH_PASS,
-    },
+    // httpCredentials: {
+  //   username: process.env.AUTH_USERNAME,
+  //   password: process.env.AUTH_PASSWORD,
+  // },
   },
 
   projects: [
