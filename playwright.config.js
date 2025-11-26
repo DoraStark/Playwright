@@ -1,6 +1,5 @@
 // playwright.config.js
-import dotenv from "dotenv";
-dotenv.config();
+
 
 import { defineConfig } from "@playwright/test";
 
@@ -8,11 +7,11 @@ export default defineConfig({
   testDir: "./tests",
 
   use: {
-    baseURL: process.env.BASE_URL || "https://qauto.forstudy.space",
+    baseURL: "https://qauto.forstudy.space",
 
     httpCredentials: {
-  username: process.env.AUTH_USERNAME,
-  password: process.env.AUTH_PASSWORD,
+  username: "guest",
+  password: "welcome2qauto",
    },
   },
 
