@@ -24,7 +24,7 @@ jobs:
       - name: Run Playwright tests
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
-          AUTH_USER: ${{ secrets.AUTH_USER }}
-          AUTH_PASS: ${{ secrets.AUTH_PASS }}
+          AUTH_USER: ${{ secrets.AUTH_USERNAME }}
+          AUTH_PASS: ${{ secrets.AUTH_PASSWORD }}
         run: |
           npx playwright test
